@@ -1,0 +1,15 @@
+---
+title: "DDP week 2"
+author: "Tejas Shetty"
+date: "October 31, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+library(leaflet)
+library(magrittr)
+ m <- leaflet() %>%
+  addTiles() %>%  
+   addMarkers(lat=19.077065, lng=72.998993, popup="VASHI") %>%
+  addMarkers(lat=13.3536, lng=74.7439, popup="MANPAL") 
+m
